@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanban Iniciante</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Quadro Kanban Simples</h1>
+  <div class="kanban-board">
+    <div class="column">
+      <h2>A Fazer</h2>
+      <button onclick="adicionarTarefa('todo')">+ Adicionar</button>
+      <ul id="todo-list" class="task-list"></ul>
+    </div>
+    <div class="column">
+      <h2>Fazendo</h2>
+      <button onclick="adicionarTarefa('doing')">+ Adicionar</button>
+      <ul id="doing-list" class="task-list"></ul>
+    </div>
+    <div class="column">
+      <h2>Feito</h2>
+      <button onclick="adicionarTarefa('done')">+ Adicionar</button>
+      <ul id="done-list" class="task-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
